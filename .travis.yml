@@ -12,6 +12,6 @@ before_install:
 before_script:
   - lein prod-build
   - npm start &
-  - sleep 10
+  - sleep 30
 
 script: lein exec -p script/run_native_tests.clj
