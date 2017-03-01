@@ -9,7 +9,7 @@
   (test/run-tests 'lalala.client.client-tests))
 
 (defn run-tests-remote-receiver []
-  (a/go (let [ws (a/<! (chord/ws-ch "ws://localhost:3000/ws"))]
+  (a/go (let [ws (a/<! (chord/ws-ch "ws://127.0.0.1:3000/ws"))]
           (if-let [error (:error ws)]
             (throw (str "WS Error: " error))
             ; TODO: this should unblock the thread while running tests to complete sending messages as it goes
