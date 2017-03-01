@@ -10,7 +10,7 @@
 (a/go
   (clojure.java.shell/sh "./node_modules/.bin/react-native" "start"))
 
-(a/<!! (a/timeout 3000))
+(a/<!! (a/timeout 5000))
 
 (println "Starting Tests on Simulator...")
 (let [r (clojure.java.shell/sh "./node_modules/.bin/react-native" "run-ios")]
