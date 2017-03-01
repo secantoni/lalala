@@ -7,10 +7,11 @@
 (lalala.client.tests-receiver/run)
 (println "Tests Receiver Running...")
 
-(a/go
-  (clojure.java.shell/sh "./node_modules/.bin/react-native" "start"))
-
-(a/<!! (a/timeout 5000))
+;(a/go
+;  (let [r (clojure.java.shell/sh "./node_modules/.bin/react-native" "start")]
+;    (println r)))
+;
+;(a/<!! (a/timeout 10000))
 
 (println "Starting Tests on Simulator...")
 (let [r (clojure.java.shell/sh "./node_modules/.bin/react-native" "run-ios")]
