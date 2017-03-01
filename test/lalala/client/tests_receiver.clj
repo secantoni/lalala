@@ -22,4 +22,4 @@
 (defn run []
   (run-server (-> #'handler
                   chord-http-kit/wrap-websocket-handler)
-              {:port 3000}))
+              {:port 23423}))
