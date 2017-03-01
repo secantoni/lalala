@@ -5,9 +5,10 @@ before_install:
 #  - node --version
 #  - npm install
   - java -version
-  - echo $PATH
-  - ls -lh ~/
-  - wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -O ~/bin/lein
+#  - echo $PATH
+#  - ls -lh ~/
+#  - wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -O ~/bin/lein
+  - brew install leiningen
   - lein --version
 
 before_script:
