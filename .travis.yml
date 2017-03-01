@@ -1,7 +1,12 @@
 language: objective-c
 
 before_install:
-#  - nvm install 7
-#  - node --version
-#  - npm install
+  - nvm install 7
+  - node --version
+  - npm install
   - java -version
+
+before_script:
+  - lein prod-build
+
+script: lein exec -p script/run_native_tests.clj
