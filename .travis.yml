@@ -11,5 +11,6 @@ before_install:
 
 before_script:
   - lein prod-build
+  - ./node_modules/.bin/react-native start
 
 script: lein exec -p script/run_native_tests.clj
