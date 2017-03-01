@@ -1,9 +1,9 @@
 language: objective-c
 
 before_install:
-#  - nvm install 7
-#  - node --version
-#  - npm install
+  - nvm install 7
+  - node --version
+  - npm install
   - java -version
 #  - echo $PATH
 #  - ls -lh ~/
